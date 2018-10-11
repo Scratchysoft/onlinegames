@@ -16,22 +16,43 @@ h1 {
  font-family: "Arial"
     margin-left: 20px;
 }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1e90ff;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #111;
+}
+.active {
+    background-color: #ff6347;
+}
 </style>
 <body>
- <h1>Games</h1>
-<ul>
-  <ui>
-<a style="color:white" href="/home">Home</a>
-<a style="color:white" href="/store">Store</a>
-<a style="color:white" href="/onlinegames">Games</a>
-    </ui>
+  <ul>
+  <li><a style="color:white" class="active" href="/home">Home</a></li>
+  <li><a style="color:white" href="/store">Store</a></li>
+  <li><a style="color:white" href="/onlinegames">Games</a></li>
 </ul>
+ <h1>Games</h1>
  
  <ul>
-<li><a style="color:white" href="/Car-Driver">Car Driver</a></li>
-<li><a style="color:white" href="/Game-Archive">SnakePython</a></li>
-<li><a style="color:white" href="/flame-thrower">Flame Thrower</a</li>
-<li><a style="color:white" href="/not-a-portal-clone">Not a Portal Clone</a></li>
+<a style="color:white" href="/Car-Driver">Car Driver</a>
+<a style="color:white" href="/Game-Archive">SnakePython</a>
+  <a style="color:white" href="/flame-thrower">Flame Thrower</a>
+<a style="color:white" href="/not-a-portal-clone">Not a Portal Clone</a>
  </ul>
  
 </body>
